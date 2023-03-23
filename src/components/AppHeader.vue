@@ -1,16 +1,19 @@
 <script>
+import AppLogo from './AppLogo.vue';
+
 export default {
     name: 'AppHeader',
-    data (){
-        return {
-            message: 'ciao'
-        }
+    components: {
+        AppLogo
     }
 }
 </script>
 
 <template>
-    <h1>{{ message }}</h1>
+    <header>
+        <AppLogo></AppLogo>
+        <nav>Menù</nav>
+    </header>
 </template>
 
 <style scoped></style>

@@ -1,16 +1,11 @@
 <script>
 export default {
-    name: 'AppMain',
-    data (){
-        return {
-            message: 'ciao'
-        }
-    }
+    name: 'AppMain'
 }
 </script>
 
 <template>
-    <h1>{{ message }}</h1>
+    Main
 </template>
 
 <style scoped></style>

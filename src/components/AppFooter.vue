@@ -1,16 +1,11 @@
 <script>
 export default {
-    name: 'AppFooter',
-    data (){
-        return {
-            message: 'ciao'
-        }
-    }
+    name: 'AppFooter'
 }
 </script>
 
 <template>
-    <h1>{{ message }}</h1>
+    Footer
 </template>
 
 <style scoped></style>
