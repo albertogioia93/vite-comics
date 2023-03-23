@@ -1,10 +1,12 @@
 <script>
 import AppLogo from './AppLogo.vue';
+import AppNav from './AppNav.vue';
 
 export default {
     name: 'AppHeader',
     components: {
-        AppLogo
+        AppLogo,
+        AppNav
     }
 }
 </script>
@@ -12,7 +14,7 @@ export default {
 <template>
     <header>
         <AppLogo></AppLogo>
-        <nav>Menù</nav>
+        <AppNav></AppNav>
     </header>
 </template>
 
