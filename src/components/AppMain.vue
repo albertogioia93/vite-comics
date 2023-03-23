@@ -5,7 +5,15 @@ export default {
 </script>
 
 <template>
-    Main
+    <div> -> Content goes here  </div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+div {
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+   
+
+</style>
