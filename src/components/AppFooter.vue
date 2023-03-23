@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AppHeader',
+    name: 'AppFooter',
     data (){
         return {
             message: 'ciao'
