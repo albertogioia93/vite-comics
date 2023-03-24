@@ -19,6 +19,6 @@ export default {
 </template>
 
 <style lang="scss">
-// TUTTI I FOGLI DI STILE DI main.css SONO VISIBILI IN TUTTO IL PROGETTO
+// TUTTI I FOGLI DI STILE DI main.css SONO VISIBILI IN TUTTO IL PROGETTO (IN ALTERNATIVA, FARE COME RIGA 4 DI MAIN.JS)
 @use './assets/styles/main.scss' as *;
 </style>
