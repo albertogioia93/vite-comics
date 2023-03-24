@@ -67,10 +67,11 @@
 
 <style lang="scss" scoped>
 @use 'src/assets/styles/partials/_reset.scss' as *;
+@use 'src/assets/styles/partials/_variables.scss' as *;
 nav {
     ul {
         margin: 0;
-        // USO QUESTO COMANDO DA _reset.scss GRAZIE AL RELATIVE PATH COPIATO E MESSO DOPO @use
+        // USO QUESTO COMANDO DA _reset.scss GRAZIE AL RELATIVE PATH COPIATO E INCOLLATO DOPO @use
         // list-style: none;
         display: flex;    
     }
@@ -80,7 +81,12 @@ nav {
         a {
             display: inline-block;
             padding: 20px;
-            
+
+            // quando passo sopra col mouse, lo sfondo dell'elemento diventa di colore lightgrey e il testo di colore definito nel file variables.scss
+            &:hover {
+                background-color: lightgrey;
+                color: $text-hover-color;
+            }
         }
     }
 }
