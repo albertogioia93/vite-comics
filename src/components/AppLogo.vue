@@ -5,5 +5,5 @@ export default {
 </script>
 
 <template>
-    <img src="/dc-logo.png" alt="Logo DC">
+    <img src="/img/dc-logo.png" alt="Logo DC">
 </template>
