@@ -87,8 +87,9 @@ export default {
     <section>
         <div class="container">
             <div class="fumetti">
-                <div class="fumetto" v-for="fumetto in fumetti">
+                <div class="fumetto" v-for="(fumetto, index) in fumetti" :key="index">
                     <div><img :src="fumetto.thumb" alt=""></div>
+                    <h3>{{ fumetto.series }}</h3>
                 </div>        
             </div>
         </div>
@@ -105,14 +106,16 @@ section {
 .fumetti {
     display: flex;
     flex-wrap: wrap;
+    
 
     .fumetto {
         flex-basis: calc(100% / 6);
         border: 1px solid white;
-        height: 230px;
+        // height: 230px;
 
         img {
             max-width: 100%;
+            max-height: 100%;
         }
     }
 }
