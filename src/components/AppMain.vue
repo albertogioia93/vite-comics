@@ -1,19 +1,21 @@
 <script>
+import ComicsList from './ComicsList.vue';
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+    components: {
+        ComicsList
+    }
 }
 </script>
 
 <template>
-    <div> -> Content goes here  </div>
+    <main>
+        <ComicsList></ComicsList>
+    </main>
 </template>
 
 <style lang="scss" scoped>
-div {
-    background-color: black;
-    color: white;
-    height: 80px;
-}
-   
+
 
 </style>
+
