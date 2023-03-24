@@ -4,6 +4,10 @@ import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
+
+  // obbligatorio dare un name al progetto
+  name: 'Vite DC Comics',
+  
   components: {
     AppHeader,
     AppMain,

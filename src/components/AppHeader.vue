@@ -18,4 +18,12 @@ export default {
     </header>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+</style>
