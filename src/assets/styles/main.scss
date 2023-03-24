@@ -8,6 +8,14 @@
 // ANCHE SE I FILE .scss NELLA CARTELLA 'partials' INIZIANO COL TRATTINO BASSO, QUI VENGONO RICONOSCIUTI ANCHE SE NON SI METTE QUEL TRATTINO
 
 
+
+
+// ESEMPIO DI BG-COLOR CON LE VARIABILI DI _variables.scss
+// body {
+//     background-color: $secondary-color;
+// }
+
+
 body {
-    background-color: $secondary-color;
+    background-color: white;
 }

@@ -66,12 +66,13 @@
 
 
 <style lang="scss" scoped>
+@use 'src/assets/styles/partials/_reset.scss' as *;
 nav {
     ul {
         margin: 0;
-        list-style: none;
-        display: flex;
-        
+        // USO QUESTO COMANDO DA _reset.scss GRAZIE AL RELATIVE PATH COPIATO E MESSO DOPO @use
+        // list-style: none;
+        display: flex;    
     }
 
     li {
