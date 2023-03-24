@@ -6,3 +6,8 @@
 @use './partials/typography' as *;
 
 // ANCHE SE I FILE .scss NELLA CARTELLA 'partials' INIZIANO COL TRATTINO BASSO, QUI VENGONO RICONOSCIUTI ANCHE SE NON SI METTE QUEL TRATTINO
+
+
+body {
+    background-color: $secondary-color;
+}
