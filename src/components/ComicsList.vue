@@ -95,6 +95,8 @@ export default {
                     <div><img :src="fumetto.thumb" alt=""></div>
                     <h3>{{ fumetto.series }}</h3>
                 </div>         -->
+
+                <!-- USO IL COMPONENTE GENERICO CREATO IN CardElement.vue E LO FACCIO CICLARE CON FUNZIONE E DATI DI QUESTO FILE -->
                 <CardElement class="fumetto" v-for="(fumetto, index) in fumetti" :key="index"></CardElement>
             </div>
         </div>
