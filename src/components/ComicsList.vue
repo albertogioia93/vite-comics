@@ -1,6 +1,10 @@
 <script>
+import CardElement from './CardElement.vue';
 export default {
     nome: 'ComicsList',
+    components: {
+        CardElement
+    },
     data() {
         return {
             fumetti: [
@@ -87,10 +91,11 @@ export default {
     <section>
         <div class="container">
             <div class="fumetti">
-                <div class="fumetto" v-for="(fumetto, index) in fumetti" :key="index">
+                <!-- <div class="fumetto" v-for="(fumetto, index) in fumetti" :key="index">
                     <div><img :src="fumetto.thumb" alt=""></div>
                     <h3>{{ fumetto.series }}</h3>
-                </div>        
+                </div>         -->
+                <CardElement class="fumetto" v-for="(fumetto, index) in fumetti" :key="index"></CardElement>
             </div>
         </div>
     </section>
@@ -103,15 +108,20 @@ section {
     padding: 50px;
 }
 
+h3 {
+    font-size: 14px;
+}
+
 .fumetti {
     display: flex;
     flex-wrap: wrap;
     
+    
 
     .fumetto {
         flex-basis: calc(100% / 6);
-        border: 1px solid white;
-        // height: 230px;
+        padding: 20px;
+        
 
         img {
             max-width: 100%;
