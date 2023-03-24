@@ -1,1 +1,8 @@
-// IMPORTARE QUELLO CHE UTILIZZO NEL FILE PRINCIPALE
+// QUI IN main.scss IMPORTO I FILE .scss DELLA CARTELLA 'partials' CHE UTILIZZO NEL FILE PRINCIPALE CON IL COMANDO (@use ... as *;)
+
+@use './partials/reset' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/typography' as *;
+
+// ANCHE SE I FILE .scss NELLA CARTELLA 'partials' INIZIANO COL TRATTINO BASSO, QUI VENGONO RICONOSCIUTI ANCHE SE NON SI METTE QUEL TRATTINO
