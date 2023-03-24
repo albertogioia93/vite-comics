@@ -97,7 +97,10 @@ export default {
                 </div>         -->
 
                 <!-- USO IL COMPONENTE GENERICO CREATO IN CardElement.vue E LO FACCIO CICLARE CON FUNZIONE E DATI DI QUESTO FILE -->
-                <CardElement class="fumetto" v-for="(fumetto, index) in fumetti" :key="index"></CardElement>
+                <!-- <CardElement class="fumetto" v-for="(fumetto, index) in fumetti" :key="index"></CardElement> -->
+
+                <!-- USO IL COMPONENTE GENERICO CREATO IN CardElement.vue CON L'AGGIUNTA DI "PROPS" -->
+                <CardElement class="fumetto" v-for="(fumetto, index) in fumetti" :key="index" :img="fumetto.thumb" :title="fumetto.series"></CardElement>
             </div>
         </div>
     </section>
@@ -121,14 +124,16 @@ h3 {
     
 
     .fumetto {
-        flex-basis: calc(100% / 6);
+        // flex-basis: calc(100% / 6);
+        width: 16%;
         padding: 20px;
         
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
+        // SPOSTATO IN main.scss DA DOPO LA CREAZIONE DI PROPS IN CardElement.vue
+        // img {
+        //     max-width: 100%;
+        //     max-height: 100%;
+        // }
     }
 }
 </style>
